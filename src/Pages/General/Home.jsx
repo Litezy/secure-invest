@@ -10,7 +10,7 @@ import { PiArrowsCounterClockwise, PiClock } from 'react-icons/pi'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import Layouts from '../../Components/General/Layouts'
 import { useState } from 'react'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/2.png'
 import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import { BiSupport } from 'react-icons/bi'
@@ -55,11 +55,11 @@ const achieve = [
     },
     {
         icon: <BsGraphUpArrow />,
-        title: '5B largest transaction',
+        title: '$5m largest transaction',
     },
     {
         icon: <GiClassicalKnowledge />,
-        title: '240 years of experience',
+        title: '10 years of experience',
     },
 ]
 const team = [
@@ -141,8 +141,11 @@ const Home = () => {
                     <div className=''>
                         <div className='bg-gradient-to-r from-blue-800 to-cyan-500'>
                             <div className={`fixed w-full z-10 top-0 ${scroll ? "bg-gray-100 shadow-lg border-b" : " "}`}>
-                                <div className="flex items-center z-50 justify-between mx-10 py-5">
-                                    <Link to='/' className=''> <img src={logo} alt="" className="lg:w-[12rem] w-32 " /> </Link>
+                                <div className="flex items-center z-50 justify-between mx-10 pt-2 pb-0">
+                                  <div className="flex items-center gap-3">
+                                  <Link to='/' className=''> <img src={logo} alt="" className="w-18 lg:w-[5rem] rounded-md h-[100%] " /></Link>
+                                  <Link to='/' className=' cursor-pointer text-black italic text-md hidden md:block'>Secure <span className='text-blue-400'>Invest</span> </Link>
+                                  </div>
                                     <div className="lg:flex hidden gap-5">
                                         <Link to='/' className={`${Cs}`}>Home</Link>
                                         <Link to='/team' className={`${Cs}`}>Team</Link>
@@ -158,9 +161,9 @@ const Home = () => {
                     </div><br /><br /><br /><br />
                     <div className="lg:flex items-start mx-5 my-20 justify-between">
                         <div className="">
-                            <div className="lg:text-[3rem] text-4xl mb- leading-tight text-[#fff]">Invest In Bitcoin. <br /> <span className=' '>Bitcoin Trading.</span></div>
+                            <div className="lg:text-[2.5rem] text-4xl mb- leading-tight text-[#fff]">Invest In Bitcoin and other crypto currencies. <br /> <span className='text-orange-500 '>Bitcoin Trading.</span></div>
                             <div className="lg:text-[3rem] text-4xl mb-8 leading-tight text-[#fff]"><span className=' text-cyan-400 '>Helps In, <br /> {typeEffect} <Cursor /> </span></div>
-                            <p className="lg:text-xl text-gray-100">Use modern progressive technologies of Bitcoin to earn money</p>
+                            <p className="lg:text-xl text-gray-100">Use our modern progressive technologies of crypto currencies to earn more</p>
                             <div className="lg:flex items-center md:flex xl:flex  justify-start mt-10 gap-3">
                                 <input type="email" placeholder='Enter your email address' className=' outline-none border rounded-full mb-2 lg:mb-0 py-4 px-5 w-[20rem] shadow-md transition duration-300 ease-in-out transform hover:scale-105' />
                                 <div className="border py-4 w-[10rem] text-center text-white font-semibold rounded-full bg-gradient-to-l from-cyan-500 to-blue-500 shadow-md transition duration-300 ease-in-out transform hover:scale-105">Get Started</div>
