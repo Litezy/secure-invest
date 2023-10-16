@@ -141,10 +141,10 @@ const Home = () => {
                     <div className=''>
                         <div className='bg-gradient-to-r from-blue-800 to-cyan-500'>
                             <div className={`fixed w-full z-10 top-0 ${scroll ? "bg-gray-100 shadow-lg border-b" : " "}`}>
-                                <div className="flex items-center z-50 justify-between mx-10 pt-2 pb-0">
+                                <div className="flex items-center z-50 justify-between mx-10 pt-2 pb-2 lg:pb-1">
                                   <div className="flex items-center gap-3">
-                                  <Link to='/' className=''> <img src={logo} alt="" className="w-18 lg:w-[5rem] rounded-md h-[100%] " /></Link>
-                                  <Link to='/' className=' cursor-pointer text-black italic text-md hidden md:block'>Secure <span className='text-blue-400'>Invest</span> </Link>
+                                  <Link to='/' className=''> <img src={logo} alt="" className="w-10 rounded-full lg:w-[5rem] h-[100%] " /></Link>
+                                  <Link to='/' className=' cursor-pointer text-black italic text-xl text-semibold'>Secure <span className='text-blue-400 font-bold'>Invest</span> </Link>
                                   </div>
                                     <div className="lg:flex hidden gap-5">
                                         <Link to='/' className={`${Cs}`}>Home</Link>
